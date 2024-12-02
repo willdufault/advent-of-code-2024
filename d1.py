@@ -2,8 +2,6 @@ data = """\
 ..."""
 
 # Transform data.
-# Time: O(n)
-# Space: O(n)
 left = []
 right = []
 for line in data.split("\n"):
@@ -12,8 +10,6 @@ for line in data.split("\n"):
     right.append(int(loc2))
 
 # Part 1.
-# Time: O(nlogn)
-# Space: O(n)
 left.sort()
 right.sort()
 
@@ -23,8 +19,6 @@ for loc1, loc2 in zip(left, right):
 print(dist)
 
 # Part 2.
-# Time: O(n)
-# Space: O(n)
 freq = {}
 for loc in left:
     freq[loc] = 0

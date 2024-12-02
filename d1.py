@@ -1,6 +1,9 @@
 data = """\
 ..."""
 
+# Transform data.
+# Time: O(n)
+# Space: O(n)
 left = []
 right = []
 for line in data.split("\n"):

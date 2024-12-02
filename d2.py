@@ -25,6 +25,10 @@ print(safe_cnt)
 # Part 2.
 safe_cnt = 0
 for report in reports:
+    if len(report) == 2:
+        safe_cnt += 1
+        continue
+
     for idx in range(len(report)):
         damp = report[:idx] + report[idx + 1 :]
         inc = damp[1] > damp[0]

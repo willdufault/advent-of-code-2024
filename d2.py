@@ -1,6 +1,7 @@
 data = """\
 ..."""
 
+# Transform data.
 reports = []
 for line in data.split("\n"):
     report = []

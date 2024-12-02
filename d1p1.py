@@ -1,5 +1,12 @@
-left = [...]
-right = [...]
+data = """\
+..."""
+
+left = []
+right = []
+for line in data.split("\n"):
+    loc1, loc2 = line.split()
+    left.append(int(loc1))
+    right.append(int(loc2))
 
 left.sort()
 right.sort()

@@ -2,8 +2,8 @@ data = [...]
 
 safe_cnt = 0
 for rep in data:
-    for skip in range(len(rep)):
-        damp = rep[:skip] + rep[skip + 1 :]
+    for idx in range(len(rep)):
+        damp = rep[:idx] + rep[idx + 1 :]
         inc = damp[1] > damp[0]
         prv = damp[0]
         for lvl in damp[1:]:

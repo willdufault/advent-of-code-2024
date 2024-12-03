@@ -14,7 +14,7 @@ print(total)
 
 # Part 2.
 total = 0
-pattern = r"mul\(\d+,\d+\)|do\(\)|don\'t\(\)"
+pattern = r"mul\(\d+,\d+\)|do\(\)|don't\(\)"
 matches = findall(pattern, data)
 enabled = True
 for match in matches:

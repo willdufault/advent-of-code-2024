@@ -53,10 +53,10 @@ total = 0
 for page in pages:
     if not valid(page):
         page_set = set(page)
-        pairs = []
+        half = len(page) // 2
         for num in page:
-            pairs.append((count(num), num))
-        pairs.sort()
-        total += pairs[len(page) // 2][1]
+            if count(num) == half:
+                total += num
+                break
         count.cache_clear()
 print(total)
